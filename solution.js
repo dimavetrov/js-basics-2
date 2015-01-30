@@ -1,5 +1,4 @@
-﻿function isEven(number) {
-  // % (the remainder operator) can be used to test whether a number is even
+﻿  // % (the remainder operator) can be used to test whether a number is even
   // or odd by using % 2 to check whether it’s divisible by two. Here’s another way to define
   // whether a positive whole number is even or odd:
   //
