@@ -10,22 +10,16 @@
   // Define a recursive function isEven corresponding to this description. The function should accept a number parameter and return a Boolean.
   // Test it on 50 and 75. See how it behaves on -1. Why? Can you think of a way to fix this?
 
-  if(number == 1)
-    {  //odd
-	 return false;
-    }
-   else if(number == 0)
-    { //even
-	 return true;
-    }
-	else if(number < 0)
-	{
-	 return IsEven(number*(-1));
-    }
-	else{
-	 return ( IsEven(number-2);
-    }
-}
+   if(number == 0){
+   return true;
+  }else if(number == 1){
+    return false;
+  }else if(number < 0){
+    return isEven(-number);
+  }else{
+    return isEven(number-2);
+  }
+ }
 
 function pascal(row, col) {
   // Write a procedure that computes the elements of Pascal's triangle by means of a recursive process.
@@ -44,7 +38,7 @@ function pascal(row, col) {
  		return 1;
  	}
  	else{
- 		return pascal((row-1),col) + pascal (row-1),(col-1);
+ 		return (pascal(row - 1, col - 1) + pascal(row - 1, col));
  	}
 }
 
